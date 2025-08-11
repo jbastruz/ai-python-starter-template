@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv
+venv/
+env/
+ENV/
+
+# Caching
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Coverage
+.coverage
+.coverage.*
+
+# Environment variables
+.env
+.env.*
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific
+.idea/
+.vscode/
+
+# Python version management
+.python-version
+
+# Jupyter Notebook
+.ipynb_checkpoints/
