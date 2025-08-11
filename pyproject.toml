@@ -1,0 +1,38 @@
+[project]
+name = "ai-python-starter-template"
+version = "0.1.0"
+description = "A comprehensive Python starter template with AI integration boilerplate code and project structure"
+authors = ["Jean-Baptiste ASTRUZ"]
+requires-python = ">=3.11"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "N",   # pep8-naming
+    "PIE", # flake8-pie
+    "RET", # flake8-return
+    "SIM", # flake8-simplify
+    "PTH", # flake8-use-pathlib
+]
+line-length = 100
+
+[tool.mypy]
+strict = true
+python_version = "3.11"
+ignore_missing_imports = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
